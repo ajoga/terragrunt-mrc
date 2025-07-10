@@ -4,9 +4,9 @@ include {
 dependency "base" {
   config_path = "../base"
 
-  # mock_outputs = {
-  #   demo = 0
-  # }
+  mock_outputs = {
+    demo = 0
+  }
 }
 
 terraform {
@@ -14,5 +14,5 @@ terraform {
 }
 
 inputs = {
-    # foo = dependency.base.outputs.demo
+    foo = dependency.base.outputs.demo
 }

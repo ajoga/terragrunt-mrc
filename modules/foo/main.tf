@@ -7,6 +7,6 @@ output "dummy" { # needed for initial dependency resolution
   value = "dummy"
 }
 
-# output "demo" {
-#   value = local_file.foo.file_permission
-# }
+output "demo" {
+  value = local_file.foo.file_permission
+}
